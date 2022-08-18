@@ -1,0 +1,522 @@
+<html lang="en-us">
+
+    <head>
+        <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    </head>
+     
+     
+    <body>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+       
+        <nav class="flex-container">
+
+            <a href="/"><img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2012/10/threelines.png" alt="three lines" width="50" height="30" class="threelines">
+            </a>
+
+            <a href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Udemy_logo.svg" alt="Udemy" width="91" height="34" class="udemy"></a>
+
+            <a href="/teaching/?ref=teach_header" class="categories">
+                <span>Categories</span>
+            </a>
+
+            <button type="submit" id="buttonsearch">
+                <a href="/teaching/?ref=teach_header" class="searchimg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Search_Icon.svg" alt="serch" width="24" height="24">
+                </a>
+            </button>
+
+            <input id="searchbar" type="text" placeholder="Search for anything" value="" role="combobox" class="search">
+
+            <div class="upsidebar">
+                <a href="/teaching/?ref=teach_header">
+                    <span>Udemy Business</span>
+                </a>
+
+
+                <a href="/teaching/?ref=teach_header">
+                    <span>Teach on Udemy</span>
+                </a>
+            </div>
+
+            <a href="/cart/" class="cart">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Antu_amarok_cart_view.svg" alt="cart" width="26" height="26">
+            </a>
+
+
+            <div class="loginsmall">
+                <a href="https://www.udemy.com/join/login-popup/?locale=en_US&amp;response_type=html&amp;next=https%3A%2F%2Fwww.udemy.com%2F" class="login">
+                    <span>Log in</span>
+                </a>
+            </div>
+
+            <div class="signupsmall">
+                <button class="signup">
+                    Sign up
+                </div>
+
+                <div class="earthsmall">
+                    <a href="/earth/" class="earth">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Cib-realm_%28CoreUI_Icons_v1.0.0%29.svg" alt="earth" width="15" height="12">
+                    </a>
+                </div>
+
+            </nav>
+
+
+            <section>
+
+                <div class="alarm">
+                    <img src="https://img-c.udemycdn.com/notices/web_banner/slide_1_image_udlite/b8f46419-eca3-44c1-8ba0-ed2ca89f8884.jpg" alt="alarm">
+                </div>
+
+                <div class="textalarm">
+                    <h1>
+                        New to Udemy? Lucky
+                    </h1>
+                    <h1>you.</h1>
+                    <p>Courses start at &euro;169.99. Get your new-</p>
+                    <p>student offer before it expires.</p>
+                </div>
+
+            </section>
+
+
+            <section class="courses">
+                <h1>
+                    A broad selection of courses</h1>
+                <br>
+                <p>Choose from 185,000 online video courses with new additions published every month</p>
+                <div class="sections">
+                    <h5 id="pythonid" class="click">Python</h5>
+                    <h5 id="Excelid" class="click">Excel</h5>
+                    <h5 id="Web-Developmentid" class="click">Web Development</h5>
+                    <h5 id="JavaScriptid" class="click">JavaScript</h5>
+                    <h5 id="Data-scinceid" class="click">Data Science</h5>
+                    <h5 id="AWSid" class="click">AWS Certification</h5>
+                    <h5 id="Drawingid" class="click">Drawing</h5>
+                </div>
+
+                <div class="python">
+                <div id="pythontext" >
+                    <h5>
+                        Expand your career opportunities with Python</h5>
+                    <br>
+                    <p>Take one of Udemy's range of Python courses and learn how to code using this incredibly useful language. Its</p>
+                    <p>simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You'll</p>
+                    <p>learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to</p>
+
+                    <div class="pythonbutton">Explore Python</div>
+                </div>
+
+                    <div id="carouselExampleControlsNoTouching" class="carousel slide pythoncourses" data-bs-touch="false">
+                        <div id="bootcourses" class="carousel-inner">
+
+                          
+
+                        </div>
+                        <button id="carousel-control-prev-override" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                            <span id="carousel-control-next-icon-override" class="carousel-control-prev-icon" aria-hidden="true"> <img src="https://freepngimg.com/thumb/arrow/163433-black-arrow-left-free-clipart-hq.png" width="100px" height="100px"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button id="carousel-control-next-override" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                            <span id="carousel-control-next-icon-override" class="carousel-control-next-icon" aria-hidden="true"><img src="https://pixsector.com/cache/fdcadf05/avd5f611c08d803886a54.png" width="100px" height="100px"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                      </div>
+
+                    
+                </div>
+
+
+            </section>
+
+            <section>
+                <div class="top">
+
+                
+                <h3 class="topptext">Top catagories</h3>
+
+                <div class="container text-center">
+                    <div class="row">
+                      <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"></img> <h6 class="toptext">Design</h6></div>
+                      <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg"><h6 class="toptext">Development</h6></div>
+                      <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg"><h6 class="toptext">Marketing</h6></div>
+                      <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg"><h6 class="toptext">IT and Software</h6></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg"><h6 class="toptext">Personal Development</h6></div>
+                        <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg"><h6 class="toptext">Business</h6></div>
+                        <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg"><h6 class="toptext">Photography</h6></div>
+                        <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg"><h6 class="toptext">Music</h6></div>
+                    </div>
+                  </div>
+
+                </div>
+            </section>
+
+            <script>
+
+               fetch("./python_res.json").then(response => {
+                    return data= response.json();
+                }).then(jsondata => {
+
+                    let k=0;
+                    let v = document.getElementById("bootcourses");
+
+               
+
+                var fetchingdata = function (e) {
+                let text=document.getElementById("pythontext");
+                text.innerHTML="";
+                let header=document.createElement("h4");
+               // console.log(jsondata.array);
+                header.innerHTML=jsondata.array[k].header;
+                let description= document.createElement("p");
+                description.innerHTML=jsondata.array[k]["description"];
+                let button=document.createElement("div");
+                button.className="pythonbutton";
+                button.innerHTML=jsondata.array[k]["button"];
+                text.appendChild(header);
+                text.appendChild(description);
+                text.appendChild(button);
+
+               
+                console.log(jsondata.array[k]);
+                    
+                    v.innerHTML="";
+
+                    let d1=document.createElement("div");
+                    d1.className="carousel-item active";
+
+                    let d11=document.createElement("div");
+                    d11.style.display="flex";
+                    d11.style.float="left";
+                    d11.style.flexDirection="row";
+                 //   d11.style.flexWrap="wrap";
+    
+
+
+                    let d2=document.createElement("div");
+                    d2.className="carousel-item";
+                   
+                    let d22=document.createElement("div");
+                    d22.style.display="flex";
+                    d22.style.float="left";
+                    d22.style.flexDirection="row";
+                  //  d22.style.flexWrap="wrap";
+               
+
+                    let d3=document.createElement("div");
+                    d3.className="carousel-item";
+                   
+                    let d33=document.createElement("div");
+                    d33.style.display="flex";
+                    d33.style.float="left";
+                    d33.style.flexDirection="row";
+                   // d33.style.flexWrap="wrap";
+                    
+
+        for(let i=0 ; i<jsondata.array[k].courses.length ; i++)
+        {
+           
+           
+                
+                let slide=document.createElement("div");
+                slide.className="d-block w-100";
+                let card=document.createElement("div");
+                card.className="card";
+                card.style="width: 18rem;";
+                let im=document.createElement("img");
+                console.log(jsondata.array[k].courses[i].image);
+                im.src=jsondata.array[k].courses[i].image;
+                im.className="card-img-top";
+                card.appendChild(im);
+                let cardbody=document.createElement("div");
+                cardbody.className="card-body";
+                let cardtext=document.createElement("div");
+                cardtext.className="card-text";
+                let link=document.createElement("a");
+                link.href=jsondata.array[k].courses[i].link;
+                let title=document.createElement("h5");
+                title.innerHTML=jsondata.array[k].courses[i].title;
+                link.appendChild(title);
+                cardtext.appendChild(link);
+                let instructor= document.createElement("p");
+                instructor.className="instructor";
+                console.log(jsondata.array[k].courses[i].instructors[0].name);
+                instructor.innerHTML=jsondata.array[k].courses[i].instructors[0].name;
+                cardtext.appendChild(instructor);
+                let rate=document.createElement("div");
+                rate.className="rate";
+                let number=document.createElement("p");
+                number.className="number";
+                number.innerHTML=jsondata.array[k].courses[i].rating;
+                let imgrate=document.createElement("img");
+                imgrate.src="https://t4.ftcdn.net/jpg/02/74/86/39/360_F_274863915_4JnfDXwTaTsjg5w5e7keElOipBswjAte.jpg";
+                imgrate.width="100";
+                imgrate.height="50";
+                let views=document.createElement("p");
+                views.innerHTML="("+jsondata.array[k].courses[i].people+")";
+                rate.appendChild(number);
+                rate.appendChild(imgrate);
+                rate.appendChild(views);
+                cardtext.appendChild(rate);
+                let cost=document.createElement("h5");
+                cost.className="cost";
+                cost.innerHTML="&euro;"+jsondata.array[k].courses[i].price;
+                cardtext.appendChild(cost);
+                cardbody.appendChild(cardtext);
+                card.appendChild(cardbody);
+                slide.appendChild(card);
+               // d.appendChild(slide);
+
+                if(i<5)
+                  d11.appendChild(slide);
+                else if(i<10)
+                  d22.appendChild(slide);
+                else
+                {
+                    d33.appendChild(slide)
+                }
+                if(i==4) 
+                { 
+                    d1.appendChild(d11);
+                   v.appendChild(d1); 
+                }  
+                if(i==9)
+                {
+                    d2.appendChild(d22);
+                    v.appendChild(d2); 
+                }    
+                if(i==jsondata.array[k].courses.length-1) 
+                {
+                  d3.appendChild(d33);
+                  v.appendChild(d3);
+                }  
+        }
+    }
+        
+
+                
+
+                    
+
+        fetchingdata();     
+              
+        
+                  
+        
+        let wb=document.getElementById("Web-Developmentid");
+        let py=document.getElementById("pythonid");
+        let EX=document.getElementById("Excelid");
+        let JS=document.getElementById("JavaScriptid");
+        let DS=document.getElementById("Data-scinceid");
+        let AWSS=document.getElementById("AWSid");
+        let DR=document.getElementById("Drawingid");
+                     py.style.fontWeight="bolder";
+                     wb.style.fontWeight="lighter";
+                     EX.style.fontWeight="lighter";
+                     JS.style.fontWeight="lighter";
+                     DS.style.fontWeight="lighter";
+                     AWSS.style.fontWeight="lighter";
+                     DR.style.fontWeight="lighter";
+
+                    
+    var onPythonClicked = function (e) {
+                        k=0;
+                     //   console.log("Dd");
+                     
+                     py.style.fontWeight="bolder";
+                     wb.style.fontWeight="lighter";
+                     EX.style.fontWeight="lighter";
+                     JS.style.fontWeight="lighter";
+                     DS.style.fontWeight="lighter";
+                     AWSS.style.fontWeight="lighter";
+                     DR.style.fontWeight="lighter";
+                     
+                        fetchingdata();
+                        
+                    }
+                    var onExcelClicked = function (e) {
+                    py.style.fontWeight="lighter";
+                     EX.style.fontWeight="bolder";
+                     wb.style.fontWeight="lighter";
+                     JS.style.fontWeight="lighter";
+                     DS.style.fontWeight="lighter";
+                     AWSS.style.fontWeight="lighter";
+                     DR.style.fontWeight="lighter";
+                        k=1;
+                        fetchingdata();
+                    }
+                    var onWebClicked = function (e) {
+                        k=2;
+                        py.style.fontWeight="lighter";
+                        wb.style.fontWeight="bolder";
+                     EX.style.fontWeight="lighter";
+                     JS.style.fontWeight="lighter";
+                     DS.style.fontWeight="lighter";
+                     AWSS.style.fontWeight="lighter";
+                     DR.style.fontWeight="lighter";
+                        fetchingdata();
+                    }
+                    var onJavaClicked = function (e) {
+                        k=3;
+                        py.style.fontWeight="lighter";
+                        wb.style.fontWeight="lighter";
+                     EX.style.fontWeight="lighter";
+                     JS.style.fontWeight="bolder";
+                     DS.style.fontWeight="lighter";
+                     AWSS.style.fontWeight="lighter";
+                     DR.style.fontWeight="lighter";
+                        fetchingdata();
+                    }
+                    var onDataClicked = function (e) {
+                        k=4;
+                        py.style.fontWeight="lighter";
+                        wb.style.fontWeight="lighter";
+                     EX.style.fontWeight="lighter";
+                     JS.style.fontWeight="lighter";
+                     DS.style.fontWeight="bolder";
+                     AWSS.style.fontWeight="lighter";
+                     DR.style.fontWeight="lighter";
+                        fetchingdata();
+                    }
+                    var onAWSClicked = function (e) {
+                        k=5;
+                        py.style.fontWeight="lighter";
+                        wb.style.fontWeight="lighter";
+                     EX.style.fontWeight="lighter";
+                     JS.style.fontWeight="lighter";
+                     DS.style.fontWeight="lighter";
+                     AWSS.style.fontWeight="bolder";
+                     DR.style.fontWeight="lighter";
+                        fetchingdata();
+                    }
+                    var onDrawingClicked = function (e) {
+                        k=6;
+                        py.style.fontWeight="lighter";
+                        wb.style.fontWeight="lighter";
+                     EX.style.fontWeight="lighter";
+                     JS.style.fontWeight="lighter";
+                     DS.style.fontWeight="lighter";
+                     AWSS.style.fontWeight="lighter";
+                     DR.style.fontWeight="bolder";
+                        fetchingdata();
+                        
+                    }
+
+                 
+        var onsearchiconclicked = function (e) {
+                          let name=document.getElementById("searchbar").value;
+                          let boot=document.getElementById("bootcourses");
+                          boot.innerHTML=" ";
+
+                    e.preventDefault();
+                    
+                      //  v.innerHTML="";
+                        console.log("FF");
+                         console.log(jsondata.array[k].courses.length);
+            for(let i=0 ; i<jsondata.array[k].courses.length ; i++)
+        {
+            console.log(jsondata.array[k].courses[i]["title"]);
+           if(jsondata.array[k].courses[i]["title"].search(name)!=-1)
+             {
+                let d=document.createElement("div");
+                
+               // d.width="200";
+                d.className="course";
+                let im=document.createElement("img");
+                im.src=jsondata.array[k].courses[i]["image"];
+                im.width="225";
+                im.height="120";
+                d.appendChild(im);
+                let link=document.createElement("a");
+                link.href=jsondata.array[k].courses[i]["link"];
+                let title=document.createElement("h5");
+                title.innerHTML=jsondata.array[k].courses[i]["title"];
+                link.appendChild(title);
+                d.appendChild(link);
+                let instructor= document.createElement("p");
+                instructor.className="instructor";
+                instructor.innerHTML=jsondata.array[k].courses[i]["instructors"]["name"];
+                d.appendChild(instructor);
+                let rate=document.createElement("div");
+                rate.className="rate";
+                let number=document.createElement("p");
+                number.className="number";
+                number.innerHTML=jsondata.array[k].courses[i]["rating"];
+                let imgrate=document.createElement("img");
+                imgrate.src="https://t4.ftcdn.net/jpg/02/74/86/39/360_F_274863915_4JnfDXwTaTsjg5w5e7keElOipBswjAte.jpg";
+                imgrate.width="100";
+                imgrate.height="50";
+                let views=document.createElement("p");
+                views.innerHTML="("+jsondata.array[k].courses[i]["people"]+")";
+                rate.appendChild(number);
+                rate.appendChild(imgrate);
+                rate.appendChild(views);
+                d.appendChild(rate);
+                let cost=document.createElement("h5");
+                cost.className="cost";
+                cost.innerHTML="&euro;"+jsondata.array[k].courses[i]["price"];
+                d.appendChild(cost);
+               // v.appendChild(d)
+                boot.appendChild(d);
+
+            
+                
+             }
+        }
+       // v.className="pythoncourses";
+
+
+                    }
+
+                    
+let pythonfieldbutton= document.getElementById("pythonid");
+ pythonfieldbutton.addEventListener("click",onPythonClicked);
+
+ let excelfieldbutton= document.getElementById("Excelid");
+ excelfieldbutton.addEventListener("click",onExcelClicked);
+
+ let webfieldbutton= document.getElementById("Web-Developmentid");
+ webfieldbutton.addEventListener("click",onWebClicked);
+
+ let javafieldbutton= document.getElementById("JavaScriptid");
+ javafieldbutton.addEventListener("click",onJavaClicked);
+
+ let datafieldbutton= document.getElementById("Data-scinceid");
+ datafieldbutton.addEventListener("click",onDataClicked);
+
+ let awsfieldbutton= document.getElementById("AWSid");
+ awsfieldbutton.addEventListener("click",onAWSClicked);
+
+ let drawingfieldbutton= document.getElementById("Drawingid");
+ drawingfieldbutton.addEventListener("click",onDrawingClicked);
+
+                    let searchicon = document.getElementById("buttonsearch");
+                    searchicon.addEventListener("click", onsearchiconclicked);
+
+                   
+                   
+
+
+
+
+                })
+            </script>
+
+
+        </body>
+
+
+    </body>
+    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>
+                
