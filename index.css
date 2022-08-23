@@ -5,8 +5,9 @@
     font-family: udemy sans, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe;
   }
   a {
-    color: black;
-    text-decoration: none;
+    color: black !important;
+    text-decoration: none !important;
+
     font-size: 15px;
     font-weight: 400;
     margin: 7px;
@@ -125,6 +126,9 @@
       justify-content: space-between;    
   }
   .click{
+
+        font-weight: lighter;
+       text-decoration: #1c1d1f;
       cursor: pointer;
       margin-right: 10px;
   }
@@ -135,6 +139,29 @@
       margin-top: 20px;
       margin-bottom: 20px;
   }
+
+  .top{
+    
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+  }
+  .topptext
+  {
+    font-weight: bold;
+    margin-left: 100px;
+
+  }
+  .toptext{
+
+    margin-top: 10px;
+    
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+
   .pythonbutton{
       width: 120px;
       font-size: 15px;
@@ -150,10 +177,17 @@
       display: flex;
       flex-direction: row;
       justify-content: left;
-     
+
       flex-wrap: wrap;
       
   }
+  .cardss{
+    display:"flex";
+    float:"left";
+    flex-Direction:"row";
+    
+  }
+
 
   .course{
     margin: 25px;
@@ -161,6 +195,47 @@
     flex-wrap: wrap;
   }
   
+
+  .card{
+    margin: 3px;
+  }
+  .carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -77%;
+     margin: 10px; 
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}
+
+#carousel-control-next-icon-override {
+  background-image: none ;
+}
+#carousel-control-next-override {
+  right: -5% ;
+}
+#carousel-control-prev-override {
+  left: -9.5% ;
+}
+
+.carousel-control-prev-icon {
+  background-image: none;
+}
+  .carousel-inner {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*position: relative;*/
+    width: 100%;
+    overflow: hidden;
+  }
+
+
+
   .rate{
     /*////*/
       display: flex;
@@ -204,6 +279,17 @@
     }
   
     @media screen and (max-width: 900px){
+
+      .container{
+        flex-wrap: wrap;
+        float: left;
+      }
+      .text-center
+      {
+        flex-wrap: wrap;
+        float: left;
+      }
+
      .earthsmall{
       display: none;
      }
@@ -264,6 +350,15 @@
       justify-content: space-evenly;
       
     }
+
+
+    @media screen and (max-width: 900px)
+    {
+      .cardss{
+        /*flex-wrap:"wrap";*/
+      }
+    }
+
     
       
     }
