@@ -4,6 +4,7 @@
         <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
         <link rel="stylesheet" type="text/css" href="index.css">
 
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     </head>
@@ -15,6 +16,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
        
+
         <nav class="flex-container">
 
             <a href="/"><img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2012/10/threelines.png" alt="three lines" width="50" height="30" class="threelines">
@@ -94,6 +96,7 @@
                 <br>
                 <p>Choose from 185,000 online video courses with new additions published every month</p>
                 <div class="sections">
+
                     <h5 id="pythonid" class="click">Python</h5>
                     <h5 id="Excelid" class="click">Excel</h5>
                     <h5 id="Web-Developmentid" class="click">Web Development</h5>
@@ -105,6 +108,7 @@
 
                 <div class="python">
                 <div id="pythontext" >
+
                     <h5>
                         Expand your career opportunities with Python</h5>
                     <br>
@@ -113,6 +117,7 @@
                     <p>learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to</p>
 
                     <div class="pythonbutton">Explore Python</div>
+
                 </div>
 
                     <div id="carouselExampleControlsNoTouching" class="carousel slide pythoncourses" data-bs-touch="false">
@@ -253,16 +258,20 @@
                 console.log(jsondata.array[k].courses[i].instructors[0].name);
                 instructor.innerHTML=jsondata.array[k].courses[i].instructors[0].name;
                 cardtext.appendChild(instructor);
+
                 let rate=document.createElement("div");
                 rate.className="rate";
                 let number=document.createElement("p");
                 number.className="number";
+
                 number.innerHTML=jsondata.array[k].courses[i].rating;
+
                 let imgrate=document.createElement("img");
                 imgrate.src="https://t4.ftcdn.net/jpg/02/74/86/39/360_F_274863915_4JnfDXwTaTsjg5w5e7keElOipBswjAte.jpg";
                 imgrate.width="100";
                 imgrate.height="50";
                 let views=document.createElement("p");
+
                 views.innerHTML="("+jsondata.array[k].courses[i].people+")";
                 rate.appendChild(number);
                 rate.appendChild(imgrate);
@@ -427,43 +436,55 @@
         {
             console.log(jsondata.array[k].courses[i]["title"]);
            if(jsondata.array[k].courses[i]["title"].search(name)!=-1)
+
              {
                 let d=document.createElement("div");
                 
                // d.width="200";
                 d.className="course";
                 let im=document.createElement("img");
+
                 im.src=jsondata.array[k].courses[i]["image"];
+
                 im.width="225";
                 im.height="120";
                 d.appendChild(im);
                 let link=document.createElement("a");
+
                 link.href=jsondata.array[k].courses[i]["link"];
                 let title=document.createElement("h5");
                 title.innerHTML=jsondata.array[k].courses[i]["title"];
+
                 link.appendChild(title);
                 d.appendChild(link);
                 let instructor= document.createElement("p");
                 instructor.className="instructor";
+
                 instructor.innerHTML=jsondata.array[k].courses[i]["instructors"]["name"];
+
                 d.appendChild(instructor);
                 let rate=document.createElement("div");
                 rate.className="rate";
                 let number=document.createElement("p");
                 number.className="number";
+
                 number.innerHTML=jsondata.array[k].courses[i]["rating"];
+
                 let imgrate=document.createElement("img");
                 imgrate.src="https://t4.ftcdn.net/jpg/02/74/86/39/360_F_274863915_4JnfDXwTaTsjg5w5e7keElOipBswjAte.jpg";
                 imgrate.width="100";
                 imgrate.height="50";
                 let views=document.createElement("p");
+
                 views.innerHTML="("+jsondata.array[k].courses[i]["people"]+")";
+
                 rate.appendChild(number);
                 rate.appendChild(imgrate);
                 rate.appendChild(views);
                 d.appendChild(rate);
                 let cost=document.createElement("h5");
                 cost.className="cost";
+
                 cost.innerHTML="&euro;"+jsondata.array[k].courses[i]["price"];
                 d.appendChild(cost);
                // v.appendChild(d)
@@ -509,6 +530,7 @@ let pythonfieldbutton= document.getElementById("pythonid");
 
 
 
+
                 })
             </script>
 
@@ -519,4 +541,6 @@ let pythonfieldbutton= document.getElementById("pythonid");
     </body>
     <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 </html>
+
                 
+
