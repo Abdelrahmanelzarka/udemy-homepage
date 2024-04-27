@@ -1,4 +1,4 @@
-# udemy-homepage
+# udemy-homepage-project
 
 Demo : https://abdelrahmanelzarka.github.io./
 
